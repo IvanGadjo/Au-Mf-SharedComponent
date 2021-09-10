@@ -34,7 +34,8 @@ module.exports = ({ mode = 'development' }) => ({
       name: 'app2',
       filename: 'remoteEntry.js',
       exposes: {
-        './superFunction': './src/superFunction'
+        './superFunction': './src/superFunction',
+        './sharedComponent': './src/resources/index'
       },
       // shared: { react: { singleton: true }, 'react-dom': { singleton: true } }
     }),
